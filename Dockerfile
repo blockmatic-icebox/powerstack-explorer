@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Install app dependencies
 RUN npm config set unsafe-perm true
-RUN npm -g install serve
+RUN npm -g install serve@11.0.0
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
 

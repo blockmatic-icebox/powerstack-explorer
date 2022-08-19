@@ -22,7 +22,27 @@ HEADER_STRING='{}'
 VARIABLE_STRING='{}'
 QUERY_STRING='query { test_table { id } }'
 ```
+## Docker
 
+```
+# Build the image
+docker build -t powerstack-explorer:local .
+
+# Start a container
+docker run --name powerstack-explorer --env-file .env -p 8080:8080 -d powerstack-explorer:local
+
+# Get container ID
+docker ps -aqf "name=^powerstack-explorer$"
+
+# Print app output
+docker logs -f powerstack-explorer
+
+# Stop, start, restart, kill
+docker stop powerstack-explorer
+docker start powerstack-explorer
+docker restart powerstack-explorer
+docker kill powerstack-explorer
+```
 ## Contributing
 
 Read the [contributing guidelines](https://developers.blockmatic.io) for details.

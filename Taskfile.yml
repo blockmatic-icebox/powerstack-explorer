@@ -1,0 +1,33 @@
+version: '3'
+
+dotenv: ['.env']
+silent: true
+
+tasks:
+  build:
+    cmds:
+      - docker build -t powerstack-explorer:local .
+
+  run:
+    cmds:
+      - docker run --name powerstack-explorer --env-file .env -p 8080:8080 -d powerstack-explorer:local
+
+  id:
+    cmds:
+      - docker ps -aqf "name=^powerstack-explorer$"
+
+  stop:
+    cmds:
+      - docker stop powerstack-explorer
+
+  start:
+    cmds:
+      - docker start powerstack-explorer
+
+  restart:
+    cmds:
+      - docker restart powerstack-explorer
+
+  kill:
+    cmds:
+      - docker kill powerstack-explorer

@@ -1,15 +1,9 @@
 {
-  "name": "graphqurl-graphiql",
-  "description": "Explore GraphQL APIs with headers",
-  "author": "Praveen <praveen@hasura.io>",
+  "name": "powerstack-explorer",
+  "description": "PowerStack GraphQL Explorer",
   "license": "MIT",
-  "version": "0.2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hasura/graphiql-online"
-  },
+  "version": "0.0.1",
   "main": "index.js",
-  "homepage": "https://hasura.io/",
   "keywords": [],
   "scripts": {
     "start": "concurrently --kill-others \"npm run start-prod\"",
