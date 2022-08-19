@@ -171,7 +171,7 @@ class ApiRequest extends Component {
 
       return (
         <CollapsibleToggle
-          title={'ChainGraph Provider Endpoint'}
+          title={'PowerStack Provider Endpoint'}
           isOpen={endpointSectionIsOpen}
           toggleHandler={toggleHandler}
           useDefaultTitleStyle

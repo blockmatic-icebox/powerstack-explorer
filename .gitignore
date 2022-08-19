@@ -8,3 +8,4 @@ coverage
 .idea/*
 test
 **/.tern-port
+static/dist 

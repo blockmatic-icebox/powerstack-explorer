@@ -7,8 +7,8 @@ const defaultHeader = [
     isDisabled: true,
   },
   {
-    key: 'x-chaingraph-api-key',
-    value: 'e33ac4f9-2a45-478a-95b4-ac4d1dc8f25b',
+    key: 'x-hasura-role',
+    value: 'anon',
     isActive: true,
     isNewHeader: false,
     isDisabled: true,

@@ -43,7 +43,7 @@ class ApiExplorer extends Component {
 
     return (
       <div className={'container-fluid ' + styles.padd_remove}>
-        <Helmet title="ChainGraph Explorer" />
+        <Helmet title="Powerstack Explorer" />
         <div className={styles.apiExplorerWrapper}>
           <ApiRequestWrapper
             dispatch={this.props.dispatch}
