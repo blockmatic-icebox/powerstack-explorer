@@ -7,7 +7,7 @@ const defaultHeader = [
     isDisabled: true,
   },
   {
-    key: 'x-hasura-role',
+    key: 'x-hasura-user-role',
     value: 'anon',
     isActive: true,
     isNewHeader: false,
