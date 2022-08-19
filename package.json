@@ -1,0 +1,52 @@
+{
+  "name": "powerstack-explorer",
+  "private": true,
+  "description": "",
+  "license": "",
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build",
+    "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
+    "prisma-gen": "prisma db pull && prisma generate",
+    "theme-gen": "node theme-gen.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.12.0",
+    "@remix-run/node": "^1.4.0",
+    "@remix-run/react": "^1.4.0",
+    "@remix-run/serve": "^1.4.1",
+    "@remix-run/vercel": "^1.4.1",
+    "@remix-validated-form/with-zod": "^2.0.1",
+    "@sentry/browser": "^6.19.6",
+    "@sentry/types": "^6.19.6",
+    "@stitches/react": "^1.2.7",
+    "auto-zustand-selectors-hook": "^1.0.1",
+    "ethers": "^5.6.4",
+    "lodash": "^4.17.21",
+    "prisma": "^3.12.0",
+    "react": "^18.0.0",
+    "react-dom": "^17.0.2",
+    "react-use": "^17.3.2",
+    "remix": "^1.4.0",
+    "simple-zustand-devtools": "^1.0.1",
+    "zustand": "^3.7.0"
+  },
+  "devDependencies": {
+    "@blockmatic/eslint-config": "^2.0.0",
+    "@blockmatic/prettier-config": "^2.0.0",
+    "@remix-run/dev": "1.4.0-pre.2",
+    "@remix-run/eslint-config": "1.4.0-pre.2",
+    "@types/lodash": "^4.14.182",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.13",
+    "env-var": "^7.1.1",
+    "eslint": "^8.10.0",
+    "typescript": "^4.6.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
