@@ -1,8 +1,10 @@
-node_modules
-
-/.cache
-/build
-/public/build
 .env
-
-*.log
+node_modules
+webpack-assets.json
+webpack-stats.json
+npm-debug.log
+*.swp
+coverage
+.idea/*
+test
+**/.tern-port
